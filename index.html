@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy | Cute Cut - Beauty & Wellness Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #5a6e6a;      /* muted sage - neutral & calm */
+            --primary-dark: #3e4f4c;
+            --secondary: #8b9a96;
+            --accent: #a3b5af;
+            --light: #fafaf8;
+            --dark: #2c2e2d;
+            --gray: #6b6f6e;
+            --border: #e2e6e4;
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, 'BlinkMacSystemFont', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f6f7f5;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 24px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--primary);
+            width: 44px;
+            height: 44px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: var(--dark);
+        }
+
+        .logo-text span {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: var(--gray);
+            letter-spacing: 0.3px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a.active {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 4px;
+        }
+
+        /* Hero section - neutral overlay */
+        .hero {
+            background: linear-gradient(107deg, rgba(44, 46, 45, 0.75) 0%, rgba(90, 110, 106, 0.7) 100%), 
+                        url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center 35%;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 680px;
+            margin: 0 auto;
+            opacity: 0.92;
+        }
+
+        /* Main card */
+        .container {
+            max-width: 1024px;
+            margin: -40px auto 60px;
+            background: white;
+            padding: 48px 48px;
+            border-radius: 28px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            z-index: 10;
+            border: 1px solid var(--border);
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--gray);
+            text-align: right;
+            margin-bottom: 32px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .policy-section {
+            margin-bottom: 44px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .policy-section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            margin-bottom: 18px;
+            font-size: 1.65rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 i {
+            color: var(--secondary);
+            font-size: 1.4rem;
+            background: #f0f2ef;
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 60px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #2f312f;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted transparent;
+        }
+
+        a:hover {
+            border-bottom-color: var(--primary);
+        }
+
+        .badge-app {
+            background: #eef1ee;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+
+        /* Footer - social links removed, phone number removed */
+        footer {
+            background-color: #222423;
+            color: #dadfdb;
+            padding: 48px 24px 24px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #bccbc4;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #cdd4cf;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a:hover {
+            color: #e2e9e4;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 38px;
+            margin-top: 38px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                padding: 32px 24px;
+                margin: -30px 16px 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .header-container {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 550px) {
+            nav ul {
+                gap: 14px;
+                justify-content: center;
+            }
+            .hero {
+                padding: 50px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-spa"></i>
+            </div>
+            <div>
+                <div class="logo-text">Cute <span>Cut</span></div>
+                <div class="logo-sub">Beauty · Skin · Home Care</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Providers</a></li>
+                <li><a href="#" class="active">Privacy</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Your privacy, our promise</h1>
+    <p>Cute Cut connects you with top skin, hair & home care pros — with full respect for your personal data and digital security.</p>
+</section>
+
+<main>
+    <div class="container">
+        <div class="badge-app"><i class="fas fa-mobile-alt"></i> Cute Cut App — integrated booking, skin analysis, live tracking & payment</div>
+        <p class="last-updated"><i class="far fa-calendar-alt"></i> Last updated: <span id="current-date"></span></p>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-comment-dots"></i> Comments & feedback</h2>
+            <p>When you leave a review or comment about a service provider, we collect your name, profile image, rating, and the content of your review. This helps other users make informed decisions and allows providers to improve. Your IP address and browser agent may be recorded to prevent spam or fraudulent reviews.</p>
+            <p>If you use our <strong>skin analysis & AI routine</strong> feature, your uploaded facial data is processed locally and anonymously for diagnostics only — never shared without explicit consent.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-camera-retro"></i> Media & uploads</h2>
+            <p>To help professionals understand your skin/hair needs, you may upload “before” photos or reference images. Please avoid uploading images with embedded location metadata (EXIF GPS). Cute Cut automatically strips location data from uploaded media to protect your privacy.</p>
+            <p>Service providers can only view media you explicitly share within a confirmed booking session. All media is encrypted at rest and automatically deleted after 60 days unless you request earlier removal.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-cookie"></i> Cookies & app storage</h2>
+            <p>On our website and inside the Cute Cut app, we use cookies and local storage to keep you logged in, remember your preferred language (Arabic/English), and store your cart or draft bookings. Session cookies expire when you close the app or browser; persistent "Remember me" cookies last up to 14 days.</p>
+            <p>We also use analytical cookies (anonymous) to improve booking flows and provider recommendation algorithms. You can disable non-essential cookies in your device settings, but some interactive features may be limited.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-map-marked-alt"></i> Live tracking & geolocation</h2>
+            <p>For home-care services (skin, hair, massage), Cute Cut offers real-time provider tracking on a map — similar to ride-hailing. When you enable location services, we collect your approximate or precise location only during an active session. Provider location is shared only after you confirm the appointment. You can revoke location permission anytime in your phone settings.</p>
+            <p>Location data is never sold or shared with third parties, and we automatically delete tracking logs 24 hours after service completion.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-credit-card"></i> Payments & transactions</h2>
+            <p>All electronic payments (credit/debit cards, digital wallets) are processed through PCI-DSS compliant gateways. Cute Cut does not store full card numbers — only a transaction fingerprint for receipts and refunds. Your billing information is encrypted and used solely for payment settlement between you and the service provider.</p>
+            <p>We may share transaction data with financial partners for fraud prevention, but never with marketers.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-chart-line"></i> Skin analysis & health routine</h2>
+            <p>Advanced feature: <strong>AI skin analysis & beauty routine manager</strong>. If you consent, the app can analyze selfies to recommend personalized skincare products and track session progress. All analysis data is anonymized and used to improve AI models. You can delete your skin history at any time from Profile → Data Manager.</p>
+            <p>Routine logs (products used, frequency) are stored locally on your device unless you opt into cloud backup for multi-device sync.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-handshake"></i> Who we share data with</h2>
+            <p>To enable bookings: your name, contact info, and service preferences are shared only with the specific provider you selected (after you confirm the appointment). Providers receive your basic info to prepare for the session. They are contractually bound to use this data exclusively for Cute Cut related services.</p>
+            <p>In case of emergency, anonymized data may be shared with authorities if required by law. We never sell personal data to advertisers.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-hourglass-half"></i> Data retention</h2>
+            <p>Your profile, booking history, and reviews are retained as long as your account is active. If you delete your account, we anonymize all personal data within 30 days, except transactional records required for financial audits (retained for 5 years without identifying markers).</p>
+            <p>Chat messages between you and providers are deleted 6 months after the last message. You can manually delete individual conversations.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-user-lock"></i> Your rights (GDPR & KSA PDPL)</h2>
+            <p>You have the right to access, correct, or erase your personal data. Export your full profile as a JSON or PDF file from Account Settings. You can also request restriction of processing or object to automated decisions (e.g., AI provider ranking). To exercise any right, contact our privacy team at <a href="mailto:privacy@cutecut.com">privacy@cutecut.com</a>.</p>
+            <p>We respond within 30 days. If you are in the EU or Saudi Arabia, you may lodge a complaint with your local data protection authority.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-globe"></i> International transfers</h2>
+            <p>Cute Cut operates servers in secure cloud regions (EU & UAE). Data may be transferred to provide service continuity; we ensure standard contractual clauses or equivalent safeguards are applied.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2><i class="fas fa-envelope-open-text"></i> Changes & contact</h2>
+            <p>We may update this policy occasionally. Material changes will be notified via in-app notification or email. Continued use of Cute Cut after changes implies acceptance. For questions: <a href="mailto:privacy@cutecut.com">privacy@cutecut.com</a> or visit our support center.</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3><i class="fas fa-heart"></i> Cute Cut</h3>
+            <p>Your all-in-one beauty & home care ecosystem — skin analysis, instant booking, pro tracking & wellness routines. Available in Arabic & English.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <a href="#">Skin Care</a>
+            <a href="#">Hair Care</a>
+            <a href="#">Home Spa & Massage</a>
+            <a href="#">Nail & Makeup</a>
+            <a href="#">Live tracking</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-pin"></i> Riyadh, Jeddah, Madinah - KSA</p>
+            <p><i class="fas fa-envelope"></i> hello@cutecut.com</p>
+            <!-- phone number removed -->
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Provider Agreement</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Cute Cut — All rights reserved. Integrated booking & care platform. | <i class="fas fa-shield-alt"></i> Secure & compliant</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    console.log("Cute Cut — privacy first, neutral elegance.");
+</script>
+</body>
+</html>
